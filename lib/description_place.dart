@@ -71,7 +71,9 @@ class DescriptionPlace extends StatelessWidget{
       textoDescripcion,
      style: TextStyle(
        fontFamily: "Lato",
-          color: Colors.black54
+          color: Colors.black54,
+
+
         ),
       ),
     );
