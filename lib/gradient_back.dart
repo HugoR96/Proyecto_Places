@@ -9,18 +9,18 @@ class GradientBack extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors:[
-            Colors.amber,
-            Colors.teal
+            Color(0xFF4268D3),
+            Color(0xFF574ACF)
             ],
-          begin: FractionalOffset(0.5,0.0),
-          end: FractionalOffset(0.5,0.5),
-          stops: [0.2 , 0.2],
+          begin: FractionalOffset(0.0,0.0),
+          end: FractionalOffset(1.0,1.0),
+          stops: [0.0, 0.6],
           tileMode: TileMode.clamp
 
         )
       ),
     );
-    return gradiente
+    return gradiente;
   }
 
 }
