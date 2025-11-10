@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:places/card_image.dart';
 import 'package:places/gradient_back.dart';
+import 'package:places/home_app_bar.dart';
 import 'package:places/review.dart';
 import 'package:places/review_list.dart';
 
@@ -10,7 +12,7 @@ class MyHome extends StatelessWidget {
 
 final descriptionPlace = Container(
   margin: EdgeInsets.only(
-    top: 250,
+    top: 300,
     left: 30,
     right: 30,
   ),
@@ -36,10 +38,10 @@ late final listView = ListView(
 
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Stack(
         children: <Widget>[
-          GradientBack()
+          listView,
+         HomeAppBar("Popular")
         ],
       ),
     );
